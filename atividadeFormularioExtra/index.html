@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>Formulário de Inscrição: Primeiros Passos na Programação com a Kenzie</h1>
+            <figure>
+                <img src="https://kenzie.com.br/_next/image?url=%2Fimages%2Flogo.png&w=640&q=75" alt="Logo Kenzie">
+            </figure>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h1>Inscreva-se Aqui:</h1>
+            <p>
+                Para se inscrever, basta preencher seus dados, informando seu endereço de email e sua 
+                motivação em fazer o curso com a gente!!
+            </p>
+        </section>
+        <section>
+            <form>
+                <fieldset>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required="true">
+                    </div>
+                    
+                    <div>  
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" maxlength="20" required>
+                    </div>
+
+                    <div>
+                    <label for="modulo">Módulo</label>
+                        <select name="modulo">
+                            <option name="modulo" value="modulo1">Módulo 1</option>
+                            <option name="modulo" value="modulo2">Módulo 2</option>
+                            <option name="modulo" value="modulo3">Módulo 3</option>
+                        </select>
+                    </div>
+
+                    <div>
+                    <p>Aceita receber as principais novidades da Kenzie por email?</p>
+                        <label for="sim">Sim</label>
+                        <input type="radio" id="sim" name="aceita" value="sim" checked>
+                        <label for="nao">Não</label>
+                        <input type="radio" id="não" name="aceita" value="nao">
+                    </div>
+
+                    <div>
+                        <p>Descreva aqui os principais motivos que te fizeram participar do evento da Kenzie</p>
+                        <textarea name="textoDescricao" id="textoDescricao" cols="30" rows="5" placeholder="Digite aqui seu texto" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
